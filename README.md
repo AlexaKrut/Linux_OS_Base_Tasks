@@ -25,27 +25,27 @@
 * Командой ``cat /etc/passwd | grep "alex"`` проверяем появилась ли инфорамция о новом пользователе в системе.
 ###### Рисунок 6 - Поиск информации о новом пользователе в файле ``/etc/passwd``
 ![image](https://github.com/user-attachments/assets/8b8beaf3-58b0-4464-ab13-81839620b713)
-* Информация о пользователе отображается
+* Информация о пользователе отображается:
+  - Имя пользователя: alex
+  - Пароль: x, потому что в зашифрованном виде хранится
+  - Идентификатор пользователя: 1002
+  - Идетификатор группы: 1002
+  - Путь до пользовательского каталога
+  - Вход в командную оболочку
 
 ## 3) Настройка сети ОС
-* Set the machine name as user-1
-
+* Изменяем название машины на ``user-1`` утилитой ``hostamectl``.
+###### Рисунок 7 - Изменение имени хоста на ``user-1``
 ![image](https://github.com/user-attachments/assets/ac1b64d9-0b0c-48aa-b682-5deb723e6edf)
-
-* Set the time zone corresponding to my current location.
-
+* Используя утилиту ``timedatectl`` устанавливаем Московское время.
+###### Рисунок 8 - Устанавка временной зоны ``Europe/Moscow``
 ![image](https://github.com/user-attachments/assets/bfb88f40-ce63-48ef-86a3-5d73e768e9c1)
-
-* Got current time.
-
+###### Рисунок 9 - Вывод текущего времени командой ``date``
 ![image](https://github.com/user-attachments/assets/920c7b19-29db-4843-8035-1eac93e219e3)
-
-* Got the names of the network interfaces using ``ip a``.
-
+* Команда ``ip a`` выводит список сетевых интерфейсов
+###### Рисунок 10 - Список сетевых интерфейсов
 ![image](https://github.com/user-attachments/assets/5ade1583-d2cf-4ae5-b953-c19509b0f0ba)
-
-Loopback интерфейс нужен для взаимодействия устройства с самим собой.
-
+* Loopback - логический интерфейс для взаимодействия устройства с самим собой.
 * Got the ip address of the PC from the DHCP server.
 
 ![image](https://github.com/user-attachments/assets/d2038a27-0580-4ec7-8b9a-e44c8444442c)
