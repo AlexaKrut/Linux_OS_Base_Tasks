@@ -73,22 +73,14 @@ Update the system packages to the latest version
 After updating the system packages, if you enter the update command again, a message should appear saying there are no updates;
 Add a screenshot of this message to the report.
 
-
-Part 5. Using the sudo command
-"How often were you told as a child that you forgot to say the 'magic' word? One of those 'magic' words was 'please'. Linux has its counterpart – sudo. The system won't perform some operations until it hears the 'magic' word."
-== Task ==
-
+## Using the sudo command
 Allow user created in Part 2 to execute sudo command.
 
 In the report explain the true purpose of sudo command (don’t write about the fact that this word is "magic" one);
 Change the OS hostname via the user created in Part 2 (using sudo);
 Add screenshot with changed hostname to the report.
 
-
-Part 6. Installing and configuring the time service
-"Although we have the correct time now, it may not always be that way. To avoid having to set it every time yourself, there are time sync services."
-== Task ==
-
+## Installing and configuring the time service
 Set up the automatic time synchronisation service.
 
 Output the time of the time zone in which you are currently located.
@@ -97,20 +89,7 @@ timedatectl show
 
 Add screenshots of the correct time and command output to the report.
 
-
-Part 7. Installing and using text editors
-"I think we're ready to move on to one of the scariest parts."
-You’re pointing toward the Netherlands on the map of the world hanging on the wall.
-"Here, Bram Moolenaar has unraveled the mysteries of harmony and inner concentration. 
-This is where the first version of VIM was released on 2 November 1991. 
-Do you want to learn how to work in VIM?"
-"Yes..."
-"Then I am your master."
-"OK..."
-"Just don't cry."
-"I won’t..."
-== Task ==
-
+## Installing and using text editors
 Install VIM text editor (+ any two others if you like NANO, MCEDIT, JOE etc.)
 
 Using each of the three selected editors, create a test_X.txt file, where X is the name of the editor in which the file is created. Write your nickname in it, close the file and save the changes.
@@ -140,13 +119,7 @@ Add screenshots to the report:
 Of each editor with word search results;
 Of each editor with commands entered to replace a word with another.
 
-
-
-
-Part 8. Installing and basic setup of the SSHD service
-"It's convenient to have access from one computer to another over a network, isn't it? But to make it not only convenient, but also safe, you should use SSH service."
-== Task ==
-
+## Installing and basic setup of the SSHD service
 Install the SSHd service.
 
 Add an auto-start of the service whenever the system boots.
@@ -168,10 +141,7 @@ Add a screenshot of the command output to the report;
 Explain the meaning of the -tan keys, the value of each output column, the value 0.0.0.0. in the report.
 
 
-Part 9. Installing and using the top, htop utilities
-"If I were asked what useful things top and htop utilities do, I would answer in one word: everything."
-== Task ==
-
+## Installing and using the top, htop utilities
 Install and run the top and htop utilities.
 
 From the output of the top command determine and write in the report:
@@ -196,7 +166,7 @@ with hostname, clock and uptime output added
 
 
 
-Part 10. Using the fdisk utility
+## Using the fdisk utility
 "Now let's figure out how to get information about your hard disk. Especially for you I've put together a couple of examples of how to use the fdisk utility."
 == Task ==
 
@@ -205,7 +175,7 @@ Run the fdisk -l command.
 In the report write the name of the hard disk, its capacity and number of sectors, and also the swap size.
 
 
-Part 11. Using the df utility
+## Using the df utility
 "We got the information about the hard disk, but often it is much more interesting to get information about the disk space, which can be obtained with the df utility."
 == Task ==
 
@@ -235,9 +205,7 @@ percentage used
 Determine and write the file system type for the partition in the report.
 
 
-Part 12. Using the du utility
-"df is not the only way to get information about disk space. I'll tell you about another one."
-== Task ==
+## Using the du utility
 
 Run the du command.
 
@@ -248,9 +216,7 @@ Output the size of all contents in /var/log (not the total, but each nested elem
 Add screenshots with the output of all used commands to the report.
 
 
-Part 13. Installing and using the ncdu utility
-"You probably didn’t like much the format in which the du command outputs information. I understand you perfectly. So now we'll take a look at its improved version."
-== Task ==
+## Installing and using the ncdu utility
 
 Install the ncdu utility.
 
@@ -264,9 +230,7 @@ Add screenshots of the used commands to the report.
 
 
 
-Part 14. Working with system logs
-"A system administrator sometimes needs to review events which happened in a system in the recent past. Linux has system logs for that."
-== Task ==
+## Working with system logs
 
 Open for viewing:
 
@@ -281,7 +245,7 @@ Restart SSHd service;
 Add a screenshot of the service restart message to the report (search for it in the logs).
 
 
-Part 15. Using the CRON job scheduler
+## Using the CRON job scheduler
 "Phew, we finally got to the last part of my long narrative. I will now show you the program, which, among other things, noticeably simplifies the periodic invocation of other programs."
 == Task ==
 
