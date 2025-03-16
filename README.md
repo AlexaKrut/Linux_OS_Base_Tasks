@@ -19,30 +19,53 @@
 ![image](https://github.com/user-attachments/assets/8b8beaf3-58b0-4464-ab13-81839620b713)
 
 ## Setting up the OS network
+* Set the machine name as user-1
 
-Set the machine name as user-1
+![image](https://github.com/user-attachments/assets/ac1b64d9-0b0c-48aa-b682-5deb723e6edf)
 
-Set the time zone corresponding to your current location.
+* Set the time zone corresponding to my current location.
 
-Output the names of the network interfaces using a console command.
+![image](https://github.com/user-attachments/assets/bfb88f40-ce63-48ef-86a3-5d73e768e9c1)
 
-In the report give an explanation for the presence of the lo interface.
+* Got current time.
 
+![image](https://github.com/user-attachments/assets/920c7b19-29db-4843-8035-1eac93e219e3)
 
-Use the console command to get the ip address of the device you are working on from the DHCP server.
+* Got the names of the network interfaces using ``ip a``.
+
+![image](https://github.com/user-attachments/assets/5ade1583-d2cf-4ae5-b953-c19509b0f0ba)
+
+Loopback интерфейс нужен для взаимодействия устройства с самим собой.
+
+* Got the ip address of the PC from the DHCP server.
+
+![image](https://github.com/user-attachments/assets/d2038a27-0580-4ec7-8b9a-e44c8444442c)
 
 Decode DHCP in the report.
 
+* Defined the external ip address of the gateway (ip).
 
-Define and display the external ip address of the gateway (ip) and the internal IP address of the gateway, aka default ip address (gw).
+![image](https://github.com/user-attachments/assets/8a7290d3-5310-442d-9ede-b1daab466a2a)
 
-Set static (manually set, not received from DHCP server) ip, gw, dns settings (use public DNS servers, e.g. 1.1.1.1 or 8.8.8.8).
+* Defined the internal IP address of the gateway (gw).
 
-Reboot the virtual machine. Make sure that the static network settings (ip, gw, dns) correspond to those set in the previous point.
+![image](https://github.com/user-attachments/assets/f5e71f06-11ef-434e-b072-fbca6cbcbd92)
 
-Describe in the report what you have done to complete all seven points (you can do it in text or with screenshots);
-Successfully ping 1.1.1.1 and ya.ru remote hosts and add a screenshot of the output command to the report. There should be "0% packet loss" phrase in command output.
+* Set static ip, gw, dns settings (use public DNS servers, e.g. 1.1.1.1 or 8.8.8.8).
 
+![image](https://github.com/user-attachments/assets/be231c56-4da5-4b29-9ef3-f6b0d6ac0c75)
+
+* Reboot the virtual machine. Make sure that the static network settings (ip, gw, dns) correspond to those set in the previous point.
+
+![image](https://github.com/user-attachments/assets/bb7da6a8-5fd7-4dee-8822-7d5c6f2a6736)
+
+![image](https://github.com/user-attachments/assets/433c5da8-2cd0-403a-bae3-22dac6cc561d)
+
+* Describe in the report what you have done to complete all seven points (you can do it in text or with screenshots);
+* Successfully ping 1.1.1.1 and ya.ru remote hosts and add a screenshot of the output command to the report. There should be "0% packet loss" phrase in command output
+
+![image](https://github.com/user-attachments/assets/7ae8e567-e200-4821-bb93-690adeb42dd1)
+![image](https://github.com/user-attachments/assets/65408ba6-68ea-423c-8e4b-c1c876ecd117)
 
 ## OS Update
 Update the system packages to the latest version
