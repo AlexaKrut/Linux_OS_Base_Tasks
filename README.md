@@ -9,7 +9,9 @@
 * Установили VirtualBox и создали новую виртуальною машину с операционной системой Ubuntu 20.04 Server LTS.
 ###### Рисунок 1 - Созданная в VBox виртуальная машина
 ![image](https://github.com/user-attachments/assets/bf4a7953-d0d0-4e56-8726-ff8edf06f4d1)
-
+* На ВМ отсутствует графический интерфейс
+###### Рисунок 2 - Терминал виртуальной машины
+![image](https://github.com/user-attachments/assets/d34072ce-6595-4474-8c01-7d0c0820a13a)
 * Checked Ubuntu version by running the command ``cat /etc/issue``.
 * You can see the result in the Screenshot below.
 
