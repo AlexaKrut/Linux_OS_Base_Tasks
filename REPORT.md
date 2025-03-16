@@ -1,14 +1,9 @@
-##Installation of the OS
-* We used VirtualBox to install Ubuntu 20.04 Server LTS without GUI.
+## Installation of the OS
+* Used VirtualBox to install Ubuntu 20.04 Server LTS without GUI.
+* Checked Ubuntu version by running the command ``cat /etc/issue``
+* You can see the result in the Screenshot below.
 
-There should be no GUI.
-Check Ubuntu version by running the command 
-cat /etc/issue
-
-Add a screenshot of the command output to the report.
-
-
-Part 2. Creating a user
+## Creating a user
 "An installed system is a good thing, but what if someone else uses it? I'll teach you how to create a new user."
 == Task ==
 
