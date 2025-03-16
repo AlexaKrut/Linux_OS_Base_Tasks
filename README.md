@@ -2,10 +2,6 @@
 Установка и обновления системы Linux. Основы администрирования.
 
 ## 1) Установка ОС
-**== Задание ==**
-##### Установи **Ubuntu 20.04 Server LTS** без графического интерфейса. (Используем программу для виртуализации — VirtualBox)
-
-**== Решение ==**
 * Установили VirtualBox и создали новую виртуальною машину с операционной системой Ubuntu 20.04 Server LTS.
 ###### Рисунок 1 - Созданная в VBox виртуальная машина
 ![image](https://github.com/user-attachments/assets/bf4a7953-d0d0-4e56-8726-ff8edf06f4d1)
@@ -18,23 +14,19 @@
 * На скриншоте видно, что сейчас установлена версия ОС 20.04.6 LTS.
 
 ## 2) Создание пользователя
-**== Задание ==**
-##### Создай пользователя, отличного от созданного при установке. Пользователь должен быть добавлен в группу `adm`.
-
-**== Решение ==**
-* Командой ``
-
+* Командой ``useradd alex`` создем нового пользователя ``alex``.
+###### Рисунок 4 - Выполнение команды ``useradd alex``
 ![image](https://github.com/user-attachments/assets/f3b03ceb-02a2-4d55-aa90-3a480b7da999)
-
-* Added ``alex`` to adm group. You can see the command in the Screenshot below.
-
+* Комнадой ``usermod -aG adm alex`` добавляем пользователя ``alex`` в группу adm.
+  Флаг -a - добавление пользователя в группу
+  Флаг -G - указание группы, куда добавлять
+###### Рисунок 5 - Добавление пользователя в группу
 ![image](https://github.com/user-attachments/assets/35814048-bf9a-470e-93c3-0766ae9bae3e)
-
-* Checked the user existance by running the command ``cat /etc/passwd``. The ``alex`` is in the output.
-
+* Командой ``cat /etc/passwd | grep "alex"`` проверяем появилась ли инфорамция о новом пользователе в системе.
+###### Рисунок 6 - Поиск информации о новом пользователе в файле ``/etc/passwd``
 ![image](https://github.com/user-attachments/assets/8b8beaf3-58b0-4464-ab13-81839620b713)
 
-## 3) Setting up the OS network
+## 3) Настройка сети ОС
 * Set the machine name as user-1
 
 ![image](https://github.com/user-attachments/assets/ac1b64d9-0b0c-48aa-b682-5deb723e6edf)
