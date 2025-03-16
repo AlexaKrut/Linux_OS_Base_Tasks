@@ -1,5 +1,14 @@
-## 1) Installation of the OS
-* Used VirtualBox to install Ubuntu 20.04 Server LTS without GUI.
+# Операционные системы UNIX/Linux (Базовый)
+Установка и обновления системы Linux. Основы администрирования.
+
+## 1) Установка ОС
+**== Задание ==**
+##### Установи **Ubuntu 20.04 Server LTS** без графического интерфейса. (Используем программу для виртуализации — VirtualBox)
+
+**== Решение ==**
+* Установили VirtualBox и создали новую виртуальною машину с операционной системой Ubuntu 20.04 Server LTS.
+                       ![image](https://github.com/user-attachments/assets/bf4a7953-d0d0-4e56-8726-ff8edf06f4d1)
+
 * Checked Ubuntu version by running the command ``cat /etc/issue``.
 * You can see the result in the Screenshot below.
 
