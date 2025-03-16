@@ -2,6 +2,7 @@
 * Used VirtualBox to install Ubuntu 20.04 Server LTS without GUI.
 * Checked Ubuntu version by running the command ``cat /etc/issue``.
 * You can see the result in the Screenshot below.
+![image](https://github.com/user-attachments/assets/cfb452d9-d8a3-4eb5-8638-60f23485cdc8)
 
 ## Creating a user
 * Created ``new_user`` - a user other than the one created during installation.
