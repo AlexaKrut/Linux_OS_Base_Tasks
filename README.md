@@ -68,16 +68,36 @@ Decode DHCP in the report.
 ![image](https://github.com/user-attachments/assets/65408ba6-68ea-423c-8e4b-c1c876ecd117)
 
 ## OS Update
-Update the system packages to the latest version
+* Update the system packages to the latest version
 
-After updating the system packages, if you enter the update command again, a message should appear saying there are no updates;
-Add a screenshot of this message to the report.
+![image](https://github.com/user-attachments/assets/e4a86514-b105-4c0b-a90f-bdd21fd011fc)
+
+* After updating the system packages, if you enter the update command again, a message should appear saying there are no updates;
+
+![image](https://github.com/user-attachments/assets/4327563c-5875-4211-9b1a-8d735b683a12)
+
+* Теперь версия убунты
+
+![image](https://github.com/user-attachments/assets/01a9ad4f-f933-43e3-86a5-c96be5d49f8a)
 
 ## Using the sudo command
-Allow user created in Part 2 to execute sudo command.
+* Открываем файл etc/sudoers.tpm командой ``sudo visudo``
 
-In the report explain the true purpose of sudo command (don’t write about the fact that this word is "magic" one);
-Change the OS hostname via the user created in Part 2 (using sudo);
+
+![image](https://github.com/user-attachments/assets/1157f0ff-1938-4559-9507-379552dca537
+
+* Редактируем файл так, чтобы ``alex`` мог использовать команду ``sudo``
+
+![image](https://github.com/user-attachments/assets/ff213c52-8193-4606-a2f8-ecd551cbd18e)
+
+* In the report explain the true purpose of sudo command (don’t write about the fact that this word is "magic" one);
+* Переходим в командную оболочку пользователя ``alex``
+
+![image](https://github.com/user-attachments/assets/a2b4c075-d9da-44a7-b69b-8c20b96097d5)
+
+* Change the OS hostname via the user created in Part 2 (using sudo);
+
+
 Add screenshot with changed hostname to the report.
 
 ## Installing and configuring the time service
