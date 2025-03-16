@@ -12,11 +12,10 @@
 * На ВМ отсутствует графический интерфейс
 ###### Рисунок 2 - Терминал виртуальной машины
 ![image](https://github.com/user-attachments/assets/d34072ce-6595-4474-8c01-7d0c0820a13a)
-* Checked Ubuntu version by running the command ``cat /etc/issue``.
-* You can see the result in the Screenshot below.
-
+* Вводим команду ``cat /etc/issue``, чтобы проверить текущую версию ОС
+###### Рисунок 3 - Вывод команды ``cat /etc/issue``
 ![image](https://github.com/user-attachments/assets/cfb452d9-d8a3-4eb5-8638-60f23485cdc8)
-
+* На скриншоте видно, что сейчас установлена версия ОС 
 ## 2) Creating a user
 * Created user``alex`` - a user other than the one created during installation. The result is below.
 
