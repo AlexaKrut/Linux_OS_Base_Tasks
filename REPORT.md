@@ -1,25 +1,14 @@
 ## Installation of the OS
 * Used VirtualBox to install Ubuntu 20.04 Server LTS without GUI.
-* Checked Ubuntu version by running the command ``cat /etc/issue``
+* Checked Ubuntu version by running the command ``cat /etc/issue``.
 * You can see the result in the Screenshot below.
 
 ## Creating a user
-"An installed system is a good thing, but what if someone else uses it? I'll teach you how to create a new user."
-== Task ==
+* Created ``new_user`` - a user other than the one created during installation.
+* Added ``new_user`` to adm group. You can see the command in the Screenshot below.
+* Checked the user existance by running the command ``cat /etc/passwd``. The ``new_user`` is in the output. Screenshot below.
 
-Create a user other than the one created during installation. The user must be added to adm group.
-
-Add a screenshot of command call to create user.
-The new user must be in the output of the command: 
-cat /etc/passwd
-
-Add a screenshot of the command output.
-
-
-Part 3. Setting up the OS network
-"In our world, you can't go far without the Internet. However, since we want to train you for the role of a system administrator, I'll show you a little more than just setting up a network."
-"Before we begin, I suggest reading about network interfaces and DHCP."
-== Task ==
+## Setting up the OS network
 
 Set the machine name as user-1
 
@@ -45,10 +34,7 @@ Describe in the report what you have done to complete all seven points (you can 
 Successfully ping 1.1.1.1 and ya.ru remote hosts and add a screenshot of the output command to the report. There should be "0% packet loss" phrase in command output.
 
 
-Part 4. OS Update
-"You're probably wondering, 'Is the system ready now?' It's not ready at all! We haven't updated it to the latest version yet."
-== Task ==
-
+## OS Update
 Update the system packages to the latest version
 
 After updating the system packages, if you enter the update command again, a message should appear saying there are no updates;
