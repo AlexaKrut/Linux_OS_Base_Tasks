@@ -1,11 +1,11 @@
-## Installation of the OS
+## 1) Installation of the OS
 * Used VirtualBox to install Ubuntu 20.04 Server LTS without GUI.
 * Checked Ubuntu version by running the command ``cat /etc/issue``.
 * You can see the result in the Screenshot below.
 
 ![image](https://github.com/user-attachments/assets/cfb452d9-d8a3-4eb5-8638-60f23485cdc8)
 
-## Creating a user
+## 2) Creating a user
 * Created user``alex`` - a user other than the one created during installation. The result is below.
 
 ![image](https://github.com/user-attachments/assets/f3b03ceb-02a2-4d55-aa90-3a480b7da999)
@@ -18,7 +18,7 @@
 
 ![image](https://github.com/user-attachments/assets/8b8beaf3-58b0-4464-ab13-81839620b713)
 
-## Setting up the OS network
+## 3) Setting up the OS network
 * Set the machine name as user-1
 
 ![image](https://github.com/user-attachments/assets/ac1b64d9-0b0c-48aa-b682-5deb723e6edf)
@@ -67,7 +67,7 @@ Decode DHCP in the report.
 ![image](https://github.com/user-attachments/assets/7ae8e567-e200-4821-bb93-690adeb42dd1)
 ![image](https://github.com/user-attachments/assets/65408ba6-68ea-423c-8e4b-c1c876ecd117)
 
-## OS Update
+## 4) OS Update
 * Update the system packages to the latest version
 
 ![image](https://github.com/user-attachments/assets/e4a86514-b105-4c0b-a90f-bdd21fd011fc)
@@ -80,7 +80,7 @@ Decode DHCP in the report.
 
 ![image](https://github.com/user-attachments/assets/01a9ad4f-f933-43e3-86a5-c96be5d49f8a)
 
-## Using the sudo command
+## 5) Using the sudo command
 * Открываем файл etc/sudoers.tpm командой ``sudo visudo``
 
 ![image](https://github.com/user-attachments/assets/1157f0ff-1938-4559-9507-379552dca537
@@ -96,14 +96,13 @@ Decode DHCP in the report.
 
 * Change the OS hostname via the user created in Part 2 (using sudo);
 
-
 ![image](https://github.com/user-attachments/assets/011172e6-319e-482f-8b43-204f0e8b4690)
 
 * Просматриваем изменения
 
 ![image](https://github.com/user-attachments/assets/1001b493-26de-461e-b9f0-c0ea8cb72b33)
 
-## Installing and configuring the time service
+## 6) Installing and configuring the time service
 * Output the time of the time zone in which you are currently located.
 
 
@@ -114,7 +113,7 @@ timedatectl show
 
 ![image](https://github.com/user-attachments/assets/b05d19e4-93ba-42f9-b7a1-c0bff6c3d3f4)
 
-## Installing and using text editors
+## 7) Installing and using text editors
 * JOE установлен
 
 ![image](https://github.com/user-attachments/assets/504e39b1-2e94-4a45-af21-111b6038f462)
@@ -127,6 +126,7 @@ timedatectl show
 
 ![image](https://github.com/user-attachments/assets/4ad0e366-f7ae-46d6-b58d-80c5f13fd58b)
 
+### Выйти с сохранением изменений
 * файл test_vim.txt
 
 ![image](https://github.com/user-attachments/assets/20c36dff-b05b-4bac-8dec-3e8ede1066ac)
@@ -141,57 +141,74 @@ Ctrl+X -> y -> Enter
 
 ![image](https://github.com/user-attachments/assets/94113c08-d1a7-4c29-81a5-7e477b9cea5b)
 
-Ctrl+K+Q -> y
+Ctrl+K X -> Ctrl+K D -> y
 
-Add screenshots to the report:
+### Выйти без сохранения изменений
+* файл test_vim.txt
+![image](https://github.com/user-attachments/assets/18cccb38-d816-4941-ab30-726115da9a02)
 
-Of each editor with the contents of the file before closing;
+без сохранения :q!
+* файл test_nano.txt
+![image](https://github.com/user-attachments/assets/3fb121b2-3ab5-42d3-937d-35ca6514340e)
 
+Ctrl+X -> n
+* файл test_joe.txt
 
-Write down in the report what you have done to exit with the changes saved.
+![image](https://github.com/user-attachments/assets/9a1c55f4-8040-430b-a758-740f0118017a)
 
+Ctrl+C -> y
 
-Using each of the three selected editors, open the file for editing, edit the file by replacing the nickname with the "21 School 21" string, close the file without saving the changes.
+### Поиск слова и редактирование 
+* файл test_vim.txt
+- Поиск слова School
 
-Add screenshots to the report:
+![image](https://github.com/user-attachments/assets/aed9ea7e-e35b-441b-a390-d9b3c8883b70)
 
-Of each editor with the contents of the file after editing;
+- Замена School на sarirunc
 
+![image](https://github.com/user-attachments/assets/aa056800-0c32-44ac-af5b-1f2d6bfcedc0)
 
-Write down in the report what you have done to exit without saving the changes.
+* файл test_nano.txt
+- Поиск слова School (Ctrl + W)
 
+![image](https://github.com/user-attachments/assets/fd07876b-e815-4d41-a617-a2e35b66eac8)
 
-Using each of the three selected editors, edit the file again (similar to the previous point) and then master the functions of searching through the contents of a file (a word) and replacing a word with any other one.
+- Замена School на sarirunc
 
-Add screenshots to the report:
+![image](https://github.com/user-attachments/assets/463d0bba-ec81-4cf1-8d4f-2bf74ac646c9)
+![image](https://github.com/user-attachments/assets/adedd06d-a2bd-4b07-8279-9839fda38c0d)
+![image](https://github.com/user-attachments/assets/aa5c6ae3-855a-4e8e-969d-b5a21a0c03c7)
 
-Of each editor with word search results;
-Of each editor with commands entered to replace a word with another.
+* файл test_joe.txt
+Поиск и замена Ctrl+K F
+- Поиск
 
-## Installing and basic setup of the SSHD service
-Install the SSHd service.
+![image](https://github.com/user-attachments/assets/5bda2f48-5832-48e2-ac31-7b6ccb1dfba7)
 
-Add an auto-start of the service whenever the system boots.
+- Замена
+## 8) Installing and basic setup of the SSHD service
+* Install the SSHd service.
 
-Reset the SSHd service to port 2022.
+![image](https://github.com/user-attachments/assets/17efdffd-e71c-4dc9-be7f-b07b8ed96876)
 
-Show the presence of the sshd process using the ps command. To do this, you need to match the keys to the command.
+* Add an auto-start of the service whenever the system boots.
+
+![image](https://github.com/user-attachments/assets/52b8dc6f-b364-4f1a-b8f4-a9c5261088a3)
+
+* Reset the SSHd service to port 2022.
+
+![image](https://github.com/user-attachments/assets/3c67db6a-360a-468e-ae67-d3e278b64eb5)
+
+* Show the presence of the sshd process using the ps command. To do this, you need to match the keys to the command.
 
 Explain in the report the meaning of the command and each key in it.
 
+![image](https://github.com/user-attachments/assets/22f35715-ca85-4034-8e49-9643d38688a1)
 
-Reboot the system.
+## 9) Installing and using the top, htop utilities
+* Install and run the top and htop utilities.
 
-Describe in the report what you have done to complete all five points (you can do this in text or with screenshots);
-The output of the netstat -tan command should contain 
-tcp 0 0.0.0.0:2022 0.0.0.0:* LISTEN 
-(if there is no netstat command, it needs to be installed);
-Add a screenshot of the command output to the report;
-Explain the meaning of the -tan keys, the value of each output column, the value 0.0.0.0. in the report.
-
-
-## Installing and using the top, htop utilities
-Install and run the top and htop utilities.
+![image](https://github.com/user-attachments/assets/ea901a6c-b8ae-4030-8539-83cfdd443f2a)
 
 From the output of the top command determine and write in the report:
 
@@ -204,31 +221,40 @@ memory load
 pid of the process with the highest memory usage
 pid of the process taking the most CPU time
 
+* sorted by PID, PERCENT_CPU, PERCENT_MEM, TIME
 
-Add a screenshot of the htop command output to the report:
+![image](https://github.com/user-attachments/assets/a4fbcda2-8d1e-42e5-8fcb-6e089d897226)
+![image](https://github.com/user-attachments/assets/fdf80309-cb8e-4500-80e1-9770747b0a2f)
+![image](https://github.com/user-attachments/assets/4298f41e-95c8-4281-83ce-f6e415975fc9)
+![image](https://github.com/user-attachments/assets/5a28142a-5bd3-4074-b010-7c1da4d64037)
 
-sorted by PID, PERCENT_CPU, PERCENT_MEM, TIME
-filtered for sshd process
-with the syslog process found by searching
-with hostname, clock and uptime output added
+* filtered for sshd process
 
+![image](https://github.com/user-attachments/assets/2c6c078a-4092-4b1d-bdd5-760d69434d18)
 
+* with the syslog process found by searching
 
+![image](https://github.com/user-attachments/assets/4c6ee401-3ff2-460e-bd9f-fdd2c14d04c7)
 
-## Using the fdisk utility
+* with hostname, clock and uptime output added
+
+![image](https://github.com/user-attachments/assets/30e39c0f-9893-44de-8cdb-97790e9535e0)
+
+## 10) Using the fdisk utility
 "Now let's figure out how to get information about your hard disk. Especially for you I've put together a couple of examples of how to use the fdisk utility."
 == Task ==
 
 Run the fdisk -l command.
 
+![image](https://github.com/user-attachments/assets/8578f453-f763-4848-84ff-0919b46104ae)
+
 In the report write the name of the hard disk, its capacity and number of sectors, and also the swap size.
 
 
-## Using the df utility
-"We got the information about the hard disk, but often it is much more interesting to get information about the disk space, which can be obtained with the df utility."
-== Task ==
-
+## 11) Using the df utility
 Run the df command.
+
+![image](https://github.com/user-attachments/assets/4a5478ea-0aa2-4eb5-a105-0501e726f1f0)
 
 In the report write for the root partition (/):
 
@@ -243,6 +269,8 @@ Determine and write the measurement unit in the report.
 
 Run the df -Th command.
 
+![image](https://github.com/user-attachments/assets/6171a0cf-9309-4ce7-89ec-c23d3c3887bb)
+
 In the report write for the root partition (/):
 
 partition size
@@ -254,32 +282,33 @@ percentage used
 Determine and write the file system type for the partition in the report.
 
 
-## Using the du utility
+## 12) Using the du utility
+* Output the size of the /home, /var, /var/log folders (in bytes, in human readable format)
 
-Run the du command.
+![image](https://github.com/user-attachments/assets/e211c827-8ccd-4d99-9b96-2c6a7c1c1e64)
+![image](https://github.com/user-attachments/assets/fe0bdbfc-98fe-4a2f-ae4a-8e4f204cb517)
+![image](https://github.com/user-attachments/assets/c41a79af-920a-4e40-811c-f2e8d6a22182)
 
-Output the size of the /home, /var, /var/log folders (in bytes, in human readable format)
+* Output the size of all contents in /var/log (not the total, but each nested element using *)
 
-Output the size of all contents in /var/log (not the total, but each nested element using *)
+![image](https://github.com/user-attachments/assets/24c4a711-22d6-46a9-872c-886e828f9cf5)
 
 Add screenshots with the output of all used commands to the report.
 
 
-## Installing and using the ncdu utility
+## 13) Installing and using the ncdu utility
 
-Install the ncdu utility.
+* Install the ncdu utility.
 
-Output the size of the /home, /var, /var/log folders.
+* Output the size of the /home, /var, /var/log folders.
 
+![image](https://github.com/user-attachments/assets/e2e62a4f-79b1-403f-8161-744086fbf8e2)
+![image](https://github.com/user-attachments/assets/5917275f-f11e-4775-8dcd-43015315528c)
+![image](https://github.com/user-attachments/assets/0830d360-48c9-4bc7-8c76-7d8b26c045e5)
 
 The size should be approximately the same as in Part 12;
 
-
-Add screenshots of the used commands to the report.
-
-
-
-## Working with system logs
+## 14) Working with system logs
 
 Open for viewing:
 
@@ -290,21 +319,33 @@ Open for viewing:
 3. /var/log/auth.log
 
 Write the last successful login time, user name and login method in the report;
+
+![image](https://github.com/user-attachments/assets/623e3877-7c98-49e0-bd1d-0e581879f58a)
+![image](https://github.com/user-attachments/assets/0b9236ae-5ed1-497f-a7a2-d0b84b690118)
+
 Restart SSHd service;
 Add a screenshot of the service restart message to the report (search for it in the logs).
+![image](https://github.com/user-attachments/assets/b8cd1c91-64cf-4752-9e86-aa2a9c79bcdf)
 
 
-## Using the CRON job scheduler
-"Phew, we finally got to the last part of my long narrative. I will now show you the program, which, among other things, noticeably simplifies the periodic invocation of other programs."
-== Task ==
+## 15) Using the CRON job scheduler
 
 Using the job scheduler, run the uptime command in every 2 minutes.
 
-Find lines in the system logs (at least two within a given time range) about the execution;
-Display a list of current jobs for CRON;
-Add screenshots of the execution lines and the list of current tasks to the report.
+![image](https://github.com/user-attachments/assets/9548a8b3-2313-43a4-9b77-bc394f69ecef)
 
+Find lines in the system logs (at least two within a given time range) about the execution;
+
+![image](https://github.com/user-attachments/assets/d1d3f767-a2c0-4bab-aead-1721b4540029)
+![image](https://github.com/user-attachments/assets/4331be38-adcb-44a2-9267-847de95deb7e)
+
+Display a list of current jobs for CRON;
+
+![image](https://github.com/user-attachments/assets/616b250f-356f-45eb-b988-a547df608835)
 
 Remove all tasks from the job scheduler.
 
-Add a screenshot of the list of current tasks for CRON to the report.
+![image](https://github.com/user-attachments/assets/7d467b06-6865-460c-b831-8d52accda070)
+
+![image](https://github.com/user-attachments/assets/8d3c2272-2319-4fe7-a641-5e9df71f979b)
+
