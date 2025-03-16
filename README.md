@@ -2,12 +2,10 @@
 * Used VirtualBox to install Ubuntu 20.04 Server LTS without GUI.
 * Checked Ubuntu version by running the command ``cat /etc/issue``.
 * You can see the result in the Screenshot below.
-
 ![image](https://github.com/user-attachments/assets/cfb452d9-d8a3-4eb5-8638-60f23485cdc8)
 
 ## Creating a user
 * Created user``alex`` - a user other than the one created during installation. The result is below.
-
 ![image](https://github.com/user-attachments/assets/f3b03ceb-02a2-4d55-aa90-3a480b7da999)
 
 * Added ``alex`` to adm group. You can see the command in the Screenshot below.
