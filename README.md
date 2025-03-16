@@ -6,9 +6,18 @@
 ![image](https://github.com/user-attachments/assets/cfb452d9-d8a3-4eb5-8638-60f23485cdc8)
 
 ## Creating a user
-* Created ``new_user`` - a user other than the one created during installation.
-* Added ``new_user`` to adm group. You can see the command in the Screenshot below.
-* Checked the user existance by running the command ``cat /etc/passwd``. The ``new_user`` is in the output. Screenshot below.
+* Created user``alex`` - a user other than the one created during installation. The result is below.
+
+![image](https://github.com/user-attachments/assets/f3b03ceb-02a2-4d55-aa90-3a480b7da999)
+
+* Added ``alex`` to adm group. You can see the command in the Screenshot below.
+
+![image](https://github.com/user-attachments/assets/35814048-bf9a-470e-93c3-0766ae9bae3e)
+
+* Checked the user existance by running the command ``cat /etc/passwd``. The ``alex`` is in the output.
+
+![image](https://github.com/user-attachments/assets/8b8beaf3-58b0-4464-ab13-81839620b713)
+
 
 ## Setting up the OS network
 
