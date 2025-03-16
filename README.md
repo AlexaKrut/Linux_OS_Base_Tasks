@@ -83,7 +83,6 @@ Decode DHCP in the report.
 ## Using the sudo command
 * Открываем файл etc/sudoers.tpm командой ``sudo visudo``
 
-
 ![image](https://github.com/user-attachments/assets/1157f0ff-1938-4559-9507-379552dca537
 
 * Редактируем файл так, чтобы ``alex`` мог использовать команду ``sudo``
@@ -98,21 +97,51 @@ Decode DHCP in the report.
 * Change the OS hostname via the user created in Part 2 (using sudo);
 
 
-Add screenshot with changed hostname to the report.
+![image](https://github.com/user-attachments/assets/011172e6-319e-482f-8b43-204f0e8b4690)
+
+* Просматриваем изменения
+
+![image](https://github.com/user-attachments/assets/1001b493-26de-461e-b9f0-c0ea8cb72b33)
 
 ## Installing and configuring the time service
-Set up the automatic time synchronisation service.
+* Output the time of the time zone in which you are currently located.
 
-Output the time of the time zone in which you are currently located.
-The output of the following command must contain NTPSynchronized=yes: 
+
+![image](https://github.com/user-attachments/assets/ffafe882-2e3e-456a-b47c-6b797ba1e1ce)
+
+* The output of the following command must contain NTPSynchronized=yes: 
 timedatectl show
 
-Add screenshots of the correct time and command output to the report.
+![image](https://github.com/user-attachments/assets/b05d19e4-93ba-42f9-b7a1-c0bff6c3d3f4)
 
 ## Installing and using text editors
-Install VIM text editor (+ any two others if you like NANO, MCEDIT, JOE etc.)
+* JOE установлен
 
-Using each of the three selected editors, create a test_X.txt file, where X is the name of the editor in which the file is created. Write your nickname in it, close the file and save the changes.
+![image](https://github.com/user-attachments/assets/504e39b1-2e94-4a45-af21-111b6038f462)
+
+* vim установлен
+
+![image](https://github.com/user-attachments/assets/62e8f53d-ac3a-4fee-b1af-4ac68b6bc076)
+
+* nano устанволен
+
+![image](https://github.com/user-attachments/assets/4ad0e366-f7ae-46d6-b58d-80c5f13fd58b)
+
+* файл test_vim.txt
+
+![image](https://github.com/user-attachments/assets/20c36dff-b05b-4bac-8dec-3e8ede1066ac)
+
+:wq
+* файл test_nano.txt
+
+![image](https://github.com/user-attachments/assets/03b2cd4f-8852-4c75-9b55-63f9e4de66fc)
+
+Ctrl+X -> y -> Enter
+* файл test_joe.txt
+
+![image](https://github.com/user-attachments/assets/94113c08-d1a7-4c29-81a5-7e477b9cea5b)
+
+Ctrl+K+Q -> y
 
 Add screenshots to the report:
 
