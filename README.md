@@ -61,14 +61,15 @@
 * DNS сервера общедоступные
 ###### Рисунок 14 - Конфигурация netplan
 ![photo_2025-03-16_11-45-45](https://github.com/user-attachments/assets/39e6014a-377c-4ed6-a31e-820c8f1d3dba)
-* Пингуем 1.1.1.1. Пинг проходит.
+###### Рисунок 15 - ping 1.1.1.1
 ![image](https://github.com/user-attachments/assets/7ae8e567-e200-4821-bb93-690adeb42dd1)
-* Пингуем ya.ru. Пинг проходит.
+*  Пинг проходит.
+###### Рисунок 16 - ping ya.ru
 ![image](https://github.com/user-attachments/assets/65408ba6-68ea-423c-8e4b-c1c876ecd117)
+* Пинг проходит.
 
-## 4) OS Update
+## 4) Обновление ОС
 * Update the system packages to the latest version
-
 ![image](https://github.com/user-attachments/assets/e4a86514-b105-4c0b-a90f-bdd21fd011fc)
 
 * After updating the system packages, if you enter the update command again, a message should appear saying there are no updates;
