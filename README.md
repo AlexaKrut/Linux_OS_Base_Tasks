@@ -183,20 +183,16 @@
   5) Удаленный адресс, 0.0.0.0:* означает, что принимать подключения можно с любого адреса, с любого порта
   6) Статус порта
 ## 9) Установка и использование утилит top, htop
-* Install and run the top and htop utilities.
-
+###### Рисунок 49 - Запуск утилиты ``top``
 ![image](https://github.com/user-attachments/assets/ea901a6c-b8ae-4030-8539-83cfdd443f2a)
-
-From the output of the top command determine and write in the report:
-
-uptime
-number of authorised users
-average system load
-total number of processes
-cpu load
-memory load
-pid of the process with the highest memory usage
-pid of the process taking the most CPU time
+- uptime: 12 min
+- количество авторизованных пользователей: 1
+- среднюю загрузку системы: 0.09
+- общее количество процессов: 94
+- загрузку cpu: 
+- загрузку памяти,
+- pid процесса занимающего больше всего памяти,
+- pid процесса, занимающего больше всего процессорного времени.
 
 * sorted by PID, PERCENT_CPU, PERCENT_MEM, TIME
 
