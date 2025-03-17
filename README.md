@@ -69,142 +69,117 @@
 * Пинг проходит.
 
 ## 4) Обновление ОС
-* Update the system packages to the latest version
+###### Рисунок 17 - Команда для обновления ОС
 ![image](https://github.com/user-attachments/assets/e4a86514-b105-4c0b-a90f-bdd21fd011fc)
-
-* After updating the system packages, if you enter the update command again, a message should appear saying there are no updates;
-
+* Обновили ОС
+* После обновления вводим кооманду ище раз и видим, что у нас установлена последняя версия
+###### Рисунок 18 - Та же команда после обновления
 ![image](https://github.com/user-attachments/assets/4327563c-5875-4211-9b1a-8d735b683a12)
-
-* Теперь версия убунты
-
+###### Рисунок 19 - Настоящая версия ОС
 ![image](https://github.com/user-attachments/assets/01a9ad4f-f933-43e3-86a5-c96be5d49f8a)
+* Видно, что она отличается от предыдущей
 
 ## 5) Using the sudo command
-* Открываем файл etc/sudoers.tpm командой ``sudo visudo``
-
+* sudo - утилита, которая временно повышает привелегии пользователя до root, выполняющего команду.
+###### Рисунок 20 - Открытие файла etc/sudoers.tpm
 ![image](https://github.com/user-attachments/assets/1157f0ff-1938-4559-9507-379552dca537
-
-* Редактируем файл так, чтобы ``alex`` мог использовать команду ``sudo``
-
+###### Рисунок 21 - Добавляем alex в sudoers
 ![image](https://github.com/user-attachments/assets/ff213c52-8193-4606-a2f8-ecd551cbd18e)
 
-* In the report explain the true purpose of sudo command (don’t write about the fact that this word is "magic" one);
-* Переходим в командную оболочку пользователя ``alex``
-
+* Теперь пользователь ``alex`` может выполнять команды от root.
+###### Рисунок 22 - Переход в командную оболочку пользователя ``alex``
 ![image](https://github.com/user-attachments/assets/a2b4c075-d9da-44a7-b69b-8c20b96097d5)
-
-* Change the OS hostname via the user created in Part 2 (using sudo);
-
+###### Рисунок 23 - Изменение hostname
 ![image](https://github.com/user-attachments/assets/011172e6-319e-482f-8b43-204f0e8b4690)
-
-* Просматриваем изменения
-
+###### Рисунок 24 - Имя хоста
 ![image](https://github.com/user-attachments/assets/1001b493-26de-461e-b9f0-c0ea8cb72b33)
 
-## 6) Installing and configuring the time service
-* Output the time of the time zone in which you are currently located.
-
-
+## 6) Установка и настройка службы времени
+###### Рисунок 25 - Время моего часового пояса
 ![image](https://github.com/user-attachments/assets/ffafe882-2e3e-456a-b47c-6b797ba1e1ce)
-
-* The output of the following command must contain NTPSynchronized=yes: 
-timedatectl show
-
+###### Рисунок 26 - Вывод команды ``timedtectl show``
 ![image](https://github.com/user-attachments/assets/b05d19e4-93ba-42f9-b7a1-c0bff6c3d3f4)
 
-## 7) Installing and using text editors
-* JOE установлен
+* Вывод содержит ``NTPSynchronized=yes``
 
+## 7) Установка и использование текстовых редакторов
+###### Рисунок 27 - JOE установлен
 ![image](https://github.com/user-attachments/assets/504e39b1-2e94-4a45-af21-111b6038f462)
-
-* vim установлен
-
+###### Рисунок 28 - vim установлен
 ![image](https://github.com/user-attachments/assets/62e8f53d-ac3a-4fee-b1af-4ac68b6bc076)
-
-* nano устанволен
-
+###### Рисунок 29 - nano устанволен
 ![image](https://github.com/user-attachments/assets/4ad0e366-f7ae-46d6-b58d-80c5f13fd58b)
 
 ### Выйти с сохранением изменений
-* файл test_vim.txt
-
+###### Рисунок 30 - файл test_vim.txt
 ![image](https://github.com/user-attachments/assets/20c36dff-b05b-4bac-8dec-3e8ede1066ac)
-
-:wq
-* файл test_nano.txt
-
+* **Выход из файла с сохранением: :wq**
+###### Рисунок 31 - файл test_nano.txt
 ![image](https://github.com/user-attachments/assets/03b2cd4f-8852-4c75-9b55-63f9e4de66fc)
-
-Ctrl+X -> y -> Enter
-* файл test_joe.txt
-
+* **Выход из файла с сохранением: Ctrl+X -> y -> Enter**
+###### Рисунок 32 - файл test_joe.txt
 ![image](https://github.com/user-attachments/assets/94113c08-d1a7-4c29-81a5-7e477b9cea5b)
-
-Ctrl+K X -> Ctrl+K D -> y
+* **Выход из файла с сохранением: Ctrl+K X -> Ctrl+K D -> y**
 
 ### Выйти без сохранения изменений
-* файл test_vim.txt
+###### Рисунок 33 - файл test_vim.txt
 ![image](https://github.com/user-attachments/assets/18cccb38-d816-4941-ab30-726115da9a02)
-
-без сохранения :q!
-* файл test_nano.txt
+* **Выход из файла без сохранения: :q!**
+###### Рисунок 34 - файл test_nano.txt
 ![image](https://github.com/user-attachments/assets/3fb121b2-3ab5-42d3-937d-35ca6514340e)
-
-Ctrl+X -> n
-* файл test_joe.txt
-
+* **Выход из файла без сохранения: Ctrl+X -> n**
+###### Рисунок 35 - файл test_joe.txt
 ![image](https://github.com/user-attachments/assets/9a1c55f4-8040-430b-a758-740f0118017a)
-
-Ctrl+C -> y
+* **Выход из файла без сохранения: Ctrl+C -> y**
 
 ### Поиск слова и редактирование 
-* файл test_vim.txt
-- Поиск слова School
-
+###### Рисунок 36 - Поиск слова School в test_vim.txt
 ![image](https://github.com/user-attachments/assets/aed9ea7e-e35b-441b-a390-d9b3c8883b70)
-
-- Замена School на sarirunc
-
+###### Рисунок 37 - Замена School на sarirunc в test_vim.txt
 ![image](https://github.com/user-attachments/assets/aa056800-0c32-44ac-af5b-1f2d6bfcedc0)
-
-* файл test_nano.txt
-- Поиск слова School (Ctrl + W)
-
+###### Рисунок 38 - Поиск слова School в test_nano.txt
 ![image](https://github.com/user-attachments/assets/fd07876b-e815-4d41-a617-a2e35b66eac8)
 
-- Замена School на sarirunc
-
+* Поиск слова School (Ctrl + W)
+###### Рисунок 39 - Замена School на sarirunc в test_nano.txt
 ![image](https://github.com/user-attachments/assets/463d0bba-ec81-4cf1-8d4f-2bf74ac646c9)
 ![image](https://github.com/user-attachments/assets/adedd06d-a2bd-4b07-8279-9839fda38c0d)
 ![image](https://github.com/user-attachments/assets/aa5c6ae3-855a-4e8e-969d-b5a21a0c03c7)
-
-* файл test_joe.txt
-Поиск и замена Ctrl+K F
-- Поиск
-
+###### Рисунок 40 - Поиск слова School в test_joe.txt
 ![image](https://github.com/user-attachments/assets/5bda2f48-5832-48e2-ac31-7b6ccb1dfba7)
+###### Рисунок 41 - Замена School на sarirunc в test_joe.txt
+![image](https://github.com/user-attachments/assets/b3e43232-47af-41e6-9197-98a277208e70)
+![image](https://github.com/user-attachments/assets/d8d63552-351d-4150-a4e8-e82066a943a5)
 
-- Замена
-## 8) Installing and basic setup of the SSHD service
-* Install the SSHd service.
-
+* Поиск и замена Ctrl+K F
+## 8) Установка и базовая настройка сервиса SSHD
+###### Рисунок 42 - Установка ssh
 ![image](https://github.com/user-attachments/assets/17efdffd-e71c-4dc9-be7f-b07b8ed96876)
-
-* Add an auto-start of the service whenever the system boots.
-
+###### Рисунок 43 - Добавление ssh в автостарт
 ![image](https://github.com/user-attachments/assets/52b8dc6f-b364-4f1a-b8f4-a9c5261088a3)
-
-* Reset the SSHd service to port 2022.
-
+###### Рисунок 44 - Редактирование файла конфигурации sshd_config
 ![image](https://github.com/user-attachments/assets/3c67db6a-360a-468e-ae67-d3e278b64eb5)
-
-* Show the presence of the sshd process using the ps command. To do this, you need to match the keys to the command.
-
-Explain in the report the meaning of the command and each key in it.
-
+###### Рисунок 45 - Видно, что порт изменился
+![image](https://github.com/user-attachments/assets/5e74b4f5-a3f9-4a40-b8f4-deab60abf541)
+###### Рисунок 46 - Настройка брэндмауэра
+![image](https://github.com/user-attachments/assets/408605f6-75cb-41d4-837e-9a8e27e139c1)
+###### Рисунок 47 - Выполнение команды ``ps -aux | grep "ssh"``
+![image](https://github.com/user-attachments/assets/a26dd04c-4256-4b3d-8977-d538b7368e44)
+* ps - выводит процессы
+* -a - показывает процессы для всех пользователей
+* -u - отобращает пользователя/владельца процесса
+* -x - также показывает процессы, не привязанные к терминалу
+###### Рисунок 48 - Вывод команды ``netstat -tan``
 ![image](https://github.com/user-attachments/assets/22f35715-ca85-4034-8e49-9643d38688a1)
-
+* Команда ``netstat`` отображает информацию о сетевой конфигурации и активности системы Linux, включая сетевые соединения, таблицы маршрутизации, статистику интерфейса и членство в многоадресной рассылке.
+* -t - Отображает TCP-соединения
+* -a - Показывает все прослушивающие порты и активные соединения
+* -n - Показывает числовые адреса вместо разрешения хостов и портов
+* Столбцы:
+  1) Протокол
+  2) Количество принятых пакетов в очереди
+  3) Количество отправленных пакетов в очереди
+  4) 
 ## 9) Installing and using the top, htop utilities
 * Install and run the top and htop utilities.
 
