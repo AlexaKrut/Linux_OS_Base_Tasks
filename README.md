@@ -61,16 +61,9 @@
 * DNS сервера общедоступные
 ###### Рисунок 14 - Конфигурация netplan
 ![photo_2025-03-16_11-45-45](https://github.com/user-attachments/assets/39e6014a-377c-4ed6-a31e-820c8f1d3dba)
-![image](https://github.com/user-attachments/assets/be231c56-4da5-4b29-9ef3-f6b0d6ac0c75)
-
-![image](https://github.com/user-attachments/assets/bb7da6a8-5fd7-4dee-8822-7d5c6f2a6736)
-
-![image](https://github.com/user-attachments/assets/433c5da8-2cd0-403a-bae3-22dac6cc561d)
-
-* Describe in the report what you have done to complete all seven points (you can do it in text or with screenshots);
-* Successfully ping 1.1.1.1 and ya.ru remote hosts and add a screenshot of the output command to the report. There should be "0% packet loss" phrase in command output
-
+* Пингуем 1.1.1.1. Пинг проходит.
 ![image](https://github.com/user-attachments/assets/7ae8e567-e200-4821-bb93-690adeb42dd1)
+* Пингуем ya.ru. Пинг проходит.
 ![image](https://github.com/user-attachments/assets/65408ba6-68ea-423c-8e4b-c1c876ecd117)
 
 ## 4) OS Update
