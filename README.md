@@ -46,25 +46,22 @@
 ###### Рисунок 10 - Список сетевых интерфейсов
 ![image](https://github.com/user-attachments/assets/5ade1583-d2cf-4ae5-b953-c19509b0f0ba)
 * Loopback - логический интерфейс для взаимодействия устройства с самим собой.
-* Got the ip address of the PC from the DHCP server.
-
+* В системных логах можно посмотреть ip-адрес, который ВМ получает от DHCP-сервера. В нашем случае это 10.0.2.15.
+###### Рисунок 11 - Записи syslog о dhcp
 ![image](https://github.com/user-attachments/assets/d2038a27-0580-4ec7-8b9a-e44c8444442c)
-
-Decode DHCP in the report.
-
-* Defined the external ip address of the gateway (ip).
-
+* DHCP(Dynamic Host Configuration Protocol) - сетевой протокол, позволяющий автоматически назначать устройствам в сети конфигурацию(в том числе и ip-адреса).
+###### Рисунок 12 - Просмотр внешнего ip-адреса
 ![image](https://github.com/user-attachments/assets/8a7290d3-5310-442d-9ede-b1daab466a2a)
-
-* Defined the internal IP address of the gateway (gw).
-
+###### Рисунок 13 - Просмотр шлюза по умолчанию
 ![image](https://github.com/user-attachments/assets/f5e71f06-11ef-434e-b072-fbca6cbcbd92)
-
-* Set static ip, gw, dns settings (use public DNS servers, e.g. 1.1.1.1 or 8.8.8.8).
-
+* Чтобы задать статические настройки, я изменила сетевой адаптер ВМ с NAT на bridged(это в настройках vBox).
+* Затем с помощью утилиты ``netplan`` изменила сетевые настройки.
+* Шлюз по умолчанию - адрес моего роутера
+* Адрес машины - адрес из моей локальной сети
+* DNS сервера общедоступные
+###### Рисунок 14 - Конфигурация netplan
+![photo_2025-03-16_11-45-45](https://github.com/user-attachments/assets/39e6014a-377c-4ed6-a31e-820c8f1d3dba)
 ![image](https://github.com/user-attachments/assets/be231c56-4da5-4b29-9ef3-f6b0d6ac0c75)
-
-* Reboot the virtual machine. Make sure that the static network settings (ip, gw, dns) correspond to those set in the previous point.
 
 ![image](https://github.com/user-attachments/assets/bb7da6a8-5fd7-4dee-8822-7d5c6f2a6736)
 
