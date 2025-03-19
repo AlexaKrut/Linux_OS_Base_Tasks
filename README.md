@@ -184,114 +184,89 @@
   6) Статус порта
 ## 9) Установка и использование утилит top, htop
 ###### Рисунок 49 - Запуск утилиты ``top``
-![image](https://github.com/user-attachments/assets/ea901a6c-b8ae-4030-8539-83cfdd443f2a)
+![image](https://github.com/user-attachments/assets/8a9ca924-992d-4112-b2f8-c718bdc6032e)
 - uptime: 12 min
 - количество авторизованных пользователей: 1
-- среднюю загрузку системы: 0.09
-- общее количество процессов: 94
-- загрузку cpu: 
-- загрузку памяти,
-- pid процесса занимающего больше всего памяти,
-- pid процесса, занимающего больше всего процессорного времени.
-
-* sorted by PID, PERCENT_CPU, PERCENT_MEM, TIME
-
+- среднюя загрузка системы: 0.91, 0.54, 0.21 
+- общее количество процессов: 97
+- загрузку cpu:
+  •  us (user): 0.0% - время, затраченное процессами пользователя.
+  •  sy (system): 0.0% - время, затраченное ядром.
+  •  ni (nice): 0.0% - время, затраченное процессами с измененным приоритетом.
+  •  id (idle): 100.0% - время простоя CPU.
+  •  wa (wait): 0.0% - время ожидания ввода/вывода.
+  •  hi (hardware interrupts): 0.0% - время обработки аппаратных прерываний.
+  •  si (software interrupts): 0.0% - время обработки программных прерываний.
+  •  st (steal time): 0.0% - время, украденное у виртуальной машины другим гипервизором.
+- загрузку памяти:
+  •  total: 2906.2 MiB - общий объем памяти.
+  •  free: 2404.8 MiB - объем свободной памяти.
+  •  used: 361.4 MiB - объем используемой памяти.
+  •  buff/cache: 296.9 MiB - объем памяти, используемой для буферов и кэша.
+- pid процесса занимающего больше всего памяти: 1 (PID=1, занимает 0.4% памяти)
+- pid процесса, занимающего больше всего процессорного времени: 8 (PID=8, занимает 0.3% CPU)
+###### Рисунок 49 - Сортировка ``htop`` по PID
 ![image](https://github.com/user-attachments/assets/a4fbcda2-8d1e-42e5-8fcb-6e089d897226)
+###### Рисунок 50 - Сортировка ``htop`` по PERCENT_CPU
 ![image](https://github.com/user-attachments/assets/fdf80309-cb8e-4500-80e1-9770747b0a2f)
+###### Рисунок 51 - Сортировка  ``htop``по PERCENT_MEM
 ![image](https://github.com/user-attachments/assets/4298f41e-95c8-4281-83ce-f6e415975fc9)
+###### Рисунок 52 - Сортировка ``htop`` по TIME
 ![image](https://github.com/user-attachments/assets/5a28142a-5bd3-4074-b010-7c1da4d64037)
-
-* filtered for sshd process
-
+###### Рисунок 53 - ``htop`` отфильтрованный по sshd
 ![image](https://github.com/user-attachments/assets/2c6c078a-4092-4b1d-bdd5-760d69434d18)
-
-* with the syslog process found by searching
-
+###### Рисунок 54 - ``htop`` с процессом syslog, найденным, используя поиск
 ![image](https://github.com/user-attachments/assets/4c6ee401-3ff2-460e-bd9f-fdd2c14d04c7)
-
-* with hostname, clock and uptime output added
-
+###### Рисунок 55 - ``htop`` с добавленным выводом hostname, clock и uptime
 ![image](https://github.com/user-attachments/assets/30e39c0f-9893-44de-8cdb-97790e9535e0)
 
-## 10) Using the fdisk utility
-"Now let's figure out how to get information about your hard disk. Especially for you I've put together a couple of examples of how to use the fdisk utility."
-== Task ==
+## 10) Использование утилиты fdisk
+###### Рисунок 56 - Запуск комнады ``fdisk -l``
+![image](https://github.com/user-attachments/assets/19b98ba4-6efb-434e-94c4-453f46bfd9d9)
+* Жесткий диск называется /dev/sda
+* Его размер составляет 50 GiB\
+* Он содержит 104857600 секторов
+* Размер swap составляет 24 GiB
 
-Run the fdisk -l command.
-
-![image](https://github.com/user-attachments/assets/8578f453-f763-4848-84ff-0919b46104ae)
-
-In the report write the name of the hard disk, its capacity and number of sectors, and also the swap size.
-
-
-## 11) Using the df utility
-Run the df command.
-
-![image](https://github.com/user-attachments/assets/4a5478ea-0aa2-4eb5-a105-0501e726f1f0)
-
-In the report write for the root partition (/):
-
-partition size
-space used
-space free
-percentage used
-
-
-Determine and write the measurement unit in the report.
-
-
+## 11) Использование утилиты df
+###### Рисунок 57 - Запуск комнады ``df``
+![image](https://github.com/user-attachments/assets/571f5f85-c227-4a1f-ae98-30c4d01fbe02)
+* Для корневого раздела:
+  * Размер корневого раздела составляет 24590672 1K-block
+  * Размер занятого пространства — 6757684 1K-blocks
+  * Размер свободного пространства — 16558520 1K-blocks
+  * Процент использования — 29%.
+* Единицей измерения в выводе является 1K-blocks (1 килобайт).
 Run the df -Th command.
+###### Рисунок 58 - Запуск комнады ``df -Th``
+![image](https://github.com/user-attachments/assets/3e77ac84-f9e5-4804-8bf6-d97018580b71)
+* Для корневого раздела (/):
+  - Размер раздела: 24Гб
+  - Размер занятого пространства: 6,5 Гб
+  - Размер свободного пространства: 16 Гб
+  - Процент использования: 29%
+* Тип файловой системы для раздела: ext4
 
-![image](https://github.com/user-attachments/assets/6171a0cf-9309-4ce7-89ec-c23d3c3887bb)
-
-In the report write for the root partition (/):
-
-partition size
-space used
-space free
-percentage used
-
-
-Determine and write the file system type for the partition in the report.
-
-
-## 12) Using the du utility
-* Output the size of the /home, /var, /var/log folders (in bytes, in human readable format)
-
+## 12) Использование утилиты du
+###### Рисунок 59 - Размер папки /home (в байтах, в человекочитаемом виде)
 ![image](https://github.com/user-attachments/assets/e211c827-8ccd-4d99-9b96-2c6a7c1c1e64)
+###### Рисунок 60 - Размер папки /var (в байтах, в человекочитаемом виде)
 ![image](https://github.com/user-attachments/assets/fe0bdbfc-98fe-4a2f-ae4a-8e4f204cb517)
+###### Рисунок 61 - Размер папки /var/log (в байтах, в человекочитаемом виде)
 ![image](https://github.com/user-attachments/assets/c41a79af-920a-4e40-811c-f2e8d6a22182)
-
-* Output the size of all contents in /var/log (not the total, but each nested element using *)
-
+###### Рисунок 62 - Размер каждого элемента вложенного в /var/log
 ![image](https://github.com/user-attachments/assets/24c4a711-22d6-46a9-872c-886e828f9cf5)
 
-Add screenshots with the output of all used commands to the report.
-
-
-## 13) Installing and using the ncdu utility
-
-* Install the ncdu utility.
-
-* Output the size of the /home, /var, /var/log folders.
-
+## 13) Установка и использование утилиты ncdu
+###### Рисунок 63 - Размер папки /home
 ![image](https://github.com/user-attachments/assets/e2e62a4f-79b1-403f-8161-744086fbf8e2)
+###### Рисунок 64 - Размер папки /var
 ![image](https://github.com/user-attachments/assets/5917275f-f11e-4775-8dcd-43015315528c)
+###### Рисунок 65 - Размер папки /var/log
 ![image](https://github.com/user-attachments/assets/0830d360-48c9-4bc7-8c76-7d8b26c045e5)
 
-The size should be approximately the same as in Part 12;
-
-## 14) Working with system logs
-
-Open for viewing:
-
-1. /var/log/dmesg
-
-2. /var/log/syslog
-
-3. /var/log/auth.log
-
-Write the last successful login time, user name and login method in the report;
+## 14) Работа с системными журналами
+ время последней успешной авторизации, имя пользователя и метод входа в систему.
 
 ![image](https://github.com/user-attachments/assets/623e3877-7c98-49e0-bd1d-0e581879f58a)
 ![image](https://github.com/user-attachments/assets/0b9236ae-5ed1-497f-a7a2-d0b84b690118)
