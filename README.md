@@ -267,33 +267,25 @@ Run the df -Th command.
 
 ## 14) Работа с системными журналами
  время последней успешной авторизации, имя пользователя и метод входа в систему.
-
+###### Рисунок 66 - Запист об аутентификации из auth.log
 ![image](https://github.com/user-attachments/assets/623e3877-7c98-49e0-bd1d-0e581879f58a)
-![image](https://github.com/user-attachments/assets/0b9236ae-5ed1-497f-a7a2-d0b84b690118)
-
-Restart SSHd service;
-Add a screenshot of the service restart message to the report (search for it in the logs).
+  * Время последней успешной авторизации: 2025-03-16T18:04:24
+  * Имя пользователя: sarirunc
+  * Метод входа в систему: с помощью логина
+* Перезагрузили SSHd
+###### Рисунок 67 - Сообщения о перезапуске службы
 ![image](https://github.com/user-attachments/assets/b8cd1c91-64cf-4752-9e86-aa2a9c79bcdf)
 
-
-## 15) Using the CRON job scheduler
-
-Using the job scheduler, run the uptime command in every 2 minutes.
-
+## 15) Использование планировщика заданий CRON
+###### Рисунок 67 - Добавление новой задачи в файл ``crontab``
 ![image](https://github.com/user-attachments/assets/9548a8b3-2313-43a4-9b77-bc394f69ecef)
-
-Find lines in the system logs (at least two within a given time range) about the execution;
-
+###### Рисунок 68-69 - Две записи в журнале о выполнении команды ``uptime``
 ![image](https://github.com/user-attachments/assets/d1d3f767-a2c0-4bab-aead-1721b4540029)
 ![image](https://github.com/user-attachments/assets/4331be38-adcb-44a2-9267-847de95deb7e)
-
-Display a list of current jobs for CRON;
-
+###### Рисунок 70 - Cписок текущих заданий для CRON
 ![image](https://github.com/user-attachments/assets/616b250f-356f-45eb-b988-a547df608835)
-
-Remove all tasks from the job scheduler.
-
+###### Рисунок 71 - Удаление задач
 ![image](https://github.com/user-attachments/assets/7d467b06-6865-460c-b831-8d52accda070)
-
+###### Рисунок 72 - Теперь в списке нет задач
 ![image](https://github.com/user-attachments/assets/8d3c2272-2319-4fe7-a641-5e9df71f979b)
 
