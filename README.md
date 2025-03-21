@@ -4,7 +4,7 @@
 ## 1) Установка ОС
 1. Устанавили VirtualBox и создали новую виртуальною машину с операционной системой **Ubuntu 20.04 Server LTS**.
 ###### Рисунок 1 - Созданная в VBox виртуальная машина
-![image](https://github.com/user-attachments/assets/bf4a7953-d0d0-4e56-8726-ff8edf06f4d1)
+https://github.com/user-attachments/assets/bf4a7953-d0d0-4e56-8726-ff8edf06f4d1
 
 2. На ВМ отсутствует графический интерфейс.
 ###### Рисунок 2 - Терминал виртуальной машины
